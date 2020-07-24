@@ -11,7 +11,7 @@ html {
 
 body {
   color: #444;
-  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-family: Helvetica , "游ゴシック", sans-serif;
   font-size: 12px;
   line-height: 1.8;
   background: #fefefe;
@@ -81,12 +81,28 @@ h1 {
   font-size: 2.5em;
 }
 
+h1 > span.header-section-number::before{
+  content: "第";
+}
+
+h1 > span.header-section-number::after{
+  content: "章";
+}
+
 h2 {
   font-size: 2em;
 }
 
+h2 > span.header-section-number::after{
+  content: "節";
+}
+
 h3 {
   font-size: 1.5em;
+}
+
+h3 > span.header-section-number::after{
+  content: "項";
 }
 
 h4 {
